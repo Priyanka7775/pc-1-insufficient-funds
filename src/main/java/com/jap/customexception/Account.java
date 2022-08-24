@@ -31,7 +31,8 @@ public class Account {
 
         if (getAccountBalance() < ACCOUNT_BALANCE) {
             System.out.println("Insufficient Bank Balance");
-        } else {
+        }
+        else {
             int  withdrawAmount =accountBalance - amount;
             return withdrawAmount;
         }
