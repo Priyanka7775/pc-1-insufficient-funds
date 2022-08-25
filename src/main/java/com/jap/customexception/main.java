@@ -2,7 +2,7 @@ package com.jap.customexception;
 
 public class main {
     public static void main(String[] args) {
-        Account account=new Account(1900);
+        Account account=new Account(2000);
         try {
             System.out.println("Remaining Account Balance = " + account.withdraw(400));
 

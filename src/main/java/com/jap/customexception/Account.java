@@ -30,12 +30,12 @@ public class Account {
     public int withdraw(int amount) throws InsufficientFundException {
 
         if (getAccountBalance() < ACCOUNT_BALANCE) {
-            System.out.println("Insufficient Bank Balance");
+            throw new InsufficientFundException("Insufficient Bank Balance");
         }
         else {
             int  withdrawAmount =accountBalance - amount;
             return withdrawAmount;
         }
-        return 0;
+
     }
 }
